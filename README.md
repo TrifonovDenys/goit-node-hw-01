@@ -6,13 +6,7 @@ https://ibb.co/P1xvZ3T
 
 https://ibb.co/F5YdDjW
 
-https://ibb.co/ZfhR502 
+https://ibb.co/ZfhR502
 
-
-![list](https://ibb.co/gRptXpJ) 
-
-![get](https://ibb.co/P1xvZ3T) 
-
-![add](https://ibb.co/F5YdDjW) 
-
-![remove](https://ibb.co/ZfhR502 ) 
+![list](./assets/list.png) ![add](./assets/add.png) ![get](./assets/get.png)
+![remove](./assets/remove.png)
