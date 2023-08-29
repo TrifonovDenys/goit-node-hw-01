@@ -8,5 +8,5 @@ https://ibb.co/F5YdDjW
 
 https://ibb.co/ZfhR502
 
-![list](./assets/list.png) ![add](./assets/add.png) ![get](./assets/get.png)
-![remove](./assets/remove.png)
+![list](./assets/list.PNG) ![add](./assets/add.PNG) ![get](./assets/get.PNG)
+![remove](./assets/remove.PNG)
