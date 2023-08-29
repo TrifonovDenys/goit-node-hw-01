@@ -1,7 +1,7 @@
 const func = require("./contacts");
-// const argv = require("yargs").argv;
 const { Command } = require("commander");
 const program = new Command();
+
 program
   .option("-a, --action <type>", "choose action")
   .option("-i, --id <type>", "user id")
@@ -12,26 +12,17 @@ program
 program.parse(process.argv);
 
 const argv = program.opts();
-// console.log("list", func.listContacts());
 
-// console.log("get", func.getContactById("AeHIrLTr6JkxGE6SN-0Rw"));
-
-// console.log("remove", func.removeContact("AeHIrLTr6JkxGE6SN-0Rw"));
-
-// console.log(
-//   "add",
-//   func.addContact("Allen Raymond", "dui.in@egetlacus.ca", "(501) 472-5218")
-// );
-
-// TODO: рефакторить
-function invokeAction({ action, id, name, email, phone }) {
+async function invokeAction({ action, id, name, email, phone }) {
   switch (action) {
     case "list":
-      func.listContacts()
+      const table = await func.listContacts();
+      console.table(table);
       break;
 
     case "get":
-      func.getContactById(id);
+      const oneContact = await func.getContactById(id);
+      console.log(oneContact);
       break;
 
     case "add":
@@ -39,7 +30,8 @@ function invokeAction({ action, id, name, email, phone }) {
       break;
 
     case "remove":
-      func.removeContact(id);
+      // const contact = await func.removeContact(id);
+      console.log(contact);
       break;
 
     default:
